@@ -1,0 +1,18 @@
+<h1>
+    The text has {{wordlist}} words.
+</h1>
+<br />
+<a href='{% url 'home' %}'>Enter new text</a>
+<h1>
+    Your Text:
+</h1>
+<br />
+{{fulltext}}
+<br />
+<h1>
+    Number of Words:
+</h1>
+{% for ad,count in countdict %}
+{{ad}} : {{count}}
+<br />
+{% endfor %}
